@@ -1,0 +1,39 @@
+h1 {
+  color: #FF8C00;
+}
+
+em {
+  font-weight: bold;
+}
+
+.list {
+  font-style: italic;
+}
+
+.item {
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset: num; /* Задаём имя счетчика */
+   }
+   
+.item__second::before {
+    content: counter(num) '.'; /* Выводим число */
+    counter-increment: num; /* Увеличиваем значение счётчика */
+    color: #FF8C00;
+    font-style: italic;
+    }
+    
+    .autor {
+      font-weight: bold;
+      font-style: italic;
+    }
+    
+    body {
+      background: lightgrey;
+    }
+    
+    img[src="//vseretsepti.ru/images/content-img/big/180222124001.jpg"]{
+        width: 180px;
+        
+}
+
+    
